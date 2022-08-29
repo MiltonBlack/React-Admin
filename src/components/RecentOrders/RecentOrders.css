@@ -1,0 +1,62 @@
+.recent-orders {
+  margin-top: 2rem;
+}
+.recent-orders h2 {
+  margin-bottom: 0.8rem;
+}
+.recent-orders table {
+  background: var(--color-white);
+  width: 100%;
+  border-radius: var(--card-border-radius);
+  padding: var(--card-padding);
+  text-align: center;
+  box-shadow: var(--box-shadow);
+  transition: all 3s ease;
+}
+.recent-orders table:hover {
+  box-shadow: none;
+}
+.recent-orders table tbody tr td {
+  height: 2.8rem;
+  border-bottom: 1px solid var(--color-light);
+  color: var(--color-dark-variant);
+}
+.recent-orders table tbody tr:last-child td {
+  border: none;
+}
+.recent-orders a {
+  text-align: center;
+  display: block;
+  margin: 1rem auto;
+  color: var(--color-light);
+}
+
+@media screen and (max-width: 1200px) {
+  .recent-orders {
+    width: 94%;
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    margin: 2rem 0 0 8.8rem;
+  }
+  .recent-orders table {
+    width: 83vw;
+  }
+  .recent-orders table thead tr th:last-child, .recent-orders table thead tr th:first-child {
+    display: none;
+  }
+  .recent-orders table tbody tr td:last-child, .recent-orders table tbody tr td:first-child {
+    display: none;
+  }
+}
+@media screen and (max-width: 768px) {
+  .recent-orders {
+    position: relative;
+    margin: 3rem 0 0 0;
+    width: 100%;
+  }
+  .recent-orders table {
+    width: 100%;
+    margin: 0;
+  }
+}/*# sourceMappingURL=RecentOrders.css.map */

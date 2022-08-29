@@ -1,0 +1,124 @@
+aside {
+  height: 100vh;
+}
+aside .top {
+  background: #fff;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-top: 1.4rem;
+}
+aside .top .logo {
+  display: flex;
+}
+aside .top .close {
+  display: none;
+}
+aside .main {
+  background: #fff;
+  display: flex;
+  flex-direction: column;
+  height: 80vh;
+  position: relative;
+  top: 3rem;
+}
+aside .main a {
+  display: flex;
+  color: var(--color-info-dark);
+  margin-left: 2rem;
+  gap: 1rem;
+  align-items: center;
+  position: relative;
+  height: 3.7rem;
+  transition: all 300ms ease;
+}
+aside .main a .count {
+  background: var(--color-danger);
+  color: var(--color-white);
+  padding: 2px 10px;
+  font-size: 11px;
+  border-radius: var(--card-border-radius-1);
+}
+aside .main a .icon {
+  font-size: 1.6rem;
+  transition: all 300ms ease;
+}
+aside .main a h3 {
+  font-weight: 500;
+}
+aside .main a:last-child {
+  position: absolute;
+  bottom: 2rem;
+  width: 100%;
+}
+aside .main a.active {
+  background: var(--color-light);
+  color: var(--color-primary);
+  margin-left: 0;
+}
+aside .main a.active:before {
+  content: "";
+  width: 6px;
+  height: 100%;
+  background: var(--color-primary);
+}
+aside .main a.active .icon {
+  color: var(--color-primary);
+  margin-left: calc(1rem - 3px);
+}
+aside .main a:hover {
+  color: var(--color-primary);
+}
+aside .main a:hover .icon {
+  margin-left: 1rem;
+}
+
+@media screen and (max-width: 1200px) {
+  aside .top .logo {
+    display: none;
+  }
+  aside .main h3 {
+    display: none;
+  }
+  aside .main a {
+    width: 5.6rem;
+  }
+  aside .main a:last-child {
+    position: relative;
+    margin-top: 1.8rem;
+  }
+}
+@media screen and (max-width: 768px) {
+  .aside {
+    position: fixed;
+    left: 0;
+    background: var(--color-white);
+    width: 18rem;
+    z-index: 3;
+    box-shadow: 1rem 3rem 4rem var(--color-light);
+    height: 100vh;
+    padding-right: var(--card-padding);
+  }
+  .aside .top .logo {
+    margin-left: 1rem;
+    display: inline;
+  }
+  .aside .top .logo h2 {
+    display: inline;
+  }
+  .aside .top .close {
+    display: inline-block;
+    cursor: pointer;
+  }
+  .aside .main h3 {
+    display: inline;
+  }
+  .aside .main a {
+    width: 100%;
+    height: 3.4rem;
+  }
+  .aside .main a:last-child {
+    position: absolute;
+    bottom: 2rem;
+  }
+}/*# sourceMappingURL=Sidebar.css.map */
