@@ -1,5 +1,7 @@
 aside {
   height: 100vh;
+  position: relative;
+  z-index:1000;
 }
 aside .top {
   background: #fff;
@@ -7,20 +9,31 @@ aside .top {
   align-items: center;
   justify-content: space-between;
   margin-top: 1.4rem;
+  padding:5px;
+  width:16vw;
+  border-radius: var(--card-border-radius-1);
+  box-shadow: 3px 4px 15px black;
+  position: fixed;
 }
 aside .top .logo {
   display: flex;
+  margin-right:10px;
+  font-size:10px;
 }
 aside .top .close {
-  display: none;
+  display: flex;
 }
 aside .main {
   background: #fff;
   display: flex;
   flex-direction: column;
-  height: 80vh;
-  position: relative;
-  top: 3rem;
+  height: 85vh;
+  width:16vw;
+  position: fixed;
+  top: 5rem;
+  border: 1px solid grey;
+  box-shadow: 3px 4px 15px black;
+  border-radius: var(--card-border-radius-1);
 }
 aside .main a {
   display: flex;

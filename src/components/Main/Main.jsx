@@ -5,7 +5,6 @@ import { FaBalanceScale, FaChartLine, FaDollarSign } from 'react-icons/fa'
 const Main = () => {
   return (
     <main>
-        <h1>Dashboard</h1>
         <div className="date">
             <input type="date" name="date" id="" />
         </div>

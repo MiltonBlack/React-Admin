@@ -1,10 +1,12 @@
-import React, { useRef } from 'react'
+import React, { useState } from 'react'
 import { FaBars, FaMoon, FaSun, FaShoppingCart, FaPlusCircle } from 'react-icons/fa'
 import './Top.css'
 
 const Top = ({onClick}) => {
-
-    const themeToggle = useRef();
+    const [themes, setThemes] = useState(false);
+    function tog(){
+        setThemes(!themes)
+    }
     // console.log(themeToggle)
     // themeToggle.className.add('active');
     // const themeToggle = document.querySelector('theme-toggle');
@@ -15,8 +17,8 @@ const Top = ({onClick}) => {
             <button onClick={onClick}>
                 <FaBars/>
             </button>
-            <div className="theme-toggle" ref={themeToggle}>
-                <FaSun className='icon active'/><FaMoon className='icon'/>
+            <div className="theme-toggle" onClick={tog}>
+                <FaSun className={`icon ${themes ? "active" : null}`}/><FaMoon className={`icon ${themes ? null : "active" }`}/>
             </div>
             <div className="profile">
                 <div className="info">

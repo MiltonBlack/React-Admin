@@ -30,6 +30,12 @@
   margin: 1rem auto;
   color: var(--color-light);
 }
+.recent-orders table tbody tr .warning{
+  color: var(--color-warning);
+}
+.recent-orders table tbody tr .primary{
+  color:var(--color-primary);
+}
 
 @media screen and (max-width: 1200px) {
   .recent-orders {

@@ -7,19 +7,19 @@ import Top from './components/TopSection/Top';
 
 function App() {
 
-  const [menu, setMenu] = useState(false);
+  const [menu, setMenu] = useState(true);
   function toggleMenu() {
     setMenu(!menu)
   }
   return (
     <div className="App">
       <div className='container'>
-        <Sidebar menu={menu} onClick={toggleMenu}/>
-        <div>   
-        <Main/>
-        <RecentOrders/>
+        <Sidebar menu={menu} onClick={toggleMenu} />
+        <div>
+          <Main />
+          <RecentOrders />
         </div>
-        <Top onClick={toggleMenu}/>
+        <Top onClick={toggleMenu} />
       </div>
     </div>
   );
